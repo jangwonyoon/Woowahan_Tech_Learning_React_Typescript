@@ -1,4 +1,3 @@
-# Woowahan_Tech_Learning_React_Typescript
 ![pnhoi0_piaq-0_logo](https://user-images.githubusercontent.com/33803975/92595592-946cab80-f2df-11ea-9c0f-d5cfc2b51f60.jpg)
 
 ## 😆우아한 테크러닝 React&TypeScript 3기
