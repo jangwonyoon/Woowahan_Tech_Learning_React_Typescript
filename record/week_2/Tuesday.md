@@ -23,9 +23,16 @@ function app(items) {
 app(list);
 ```
 
-특정 데이터(list)를 어떠한 형태(app)로 어디(rootElement)에 그려주는 일련의 과정.(위의 간단한 예시와 같이) 위 app 함수는 직접 DOM 에 접근해 다루기에 권장하지 않는다. 규모가 커지면 리팩토링 등 겉잡을 수 없이 개발이 어려워지기 때문이다. 이런 이유로 Virtual DOM 형태의 프레임워크(라이브러리)들이 개발되어지는 것이다. 그 중 하나가 Facebook 의 [React.js](https://ko.reactjs.org/).
+특정 데이터(list)를 어떠한 형태(app)로 어디(rootElement)에 그려주는 일련의 과정.(위의 간단한 예시와 같이) 위 app 함수는 직접 DOM 에 접근해 다루기에 권장하지 않는다.
+규모가 커지면 리팩토링 등 겉잡을 수 없이 개발이 어려워지기 때문이다. 즉 복잡도가 높아진다. 
+이런 이유로 Virtual DOM 형태의 프레임워크(라이브러리)들이 개발되어지는 것이다. 그 중 하나가 Facebook 의 [React.js](https://ko.reactjs.org/).
 
 ---
+### React의 컨셉 
+`virtualDom`을 만든 후 `RealDom`(우리가 보편적으로 아는 DOM)으로 변환하는 개념 
+react에서 요소를 만드는데 `React.createElement`대신 JSX를 사용하여 `RealDom`으로 변환한다.  
+
+<img width="517" alt="11" src="https://user-images.githubusercontent.com/33803975/92600273-4e671600-f2e6-11ea-8262-50d5617d2583.png">
 
 ### React 만들기
 
@@ -175,9 +182,9 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 ### useState 훅 간단한 매커니즘
 
-useState 가 어떻게 값을 기억하는가? 리액트 createElement 가 호출되는데, 어떤 함수(함수형 컴포넌트)가 내부에서 훅 계열의 함수를 호출 했다면 useState 초기값, 배열의 인덱스를 훅 전역 배열에 넣어둔다.  
+useState 가 어떻게 값을 기억하는가? 리액트 createElement 가 호출되는데, 어떤 함수(함수형 컴포넌트)가 내부에서 훅 계열의 함수를 호출 했다면 useState 초기값, 배열의 인덱스를 `훅 전역 배열`에 넣어둔다.  
 
-만약 그 배열 안에 아무것도 들어있지 않다면 initial 값(`useState(value) 의 value`를 사용, 뭔가 들어있다면 초기값을 무시하고 그 배열 내부 인덱스를 참조한다.
+만약 그 배열 안에 아무것도 들어있지 않다면 initial 값(`useState(value) 의 value`를 사용, 뭔가 들어있다면 **초기값을 무시**하고 그 배열 내부 인덱스를 참조한다.
 
 훅은 리액트 함수형 컴포넌트 내에서만 호출되어야 하고 conditional하게 호출하면 index 를 참조하지 못한다. 컴포넌트가 렌더링 된 순서대로 훅을 호출하는 것이 그 이유이다.
 
@@ -193,7 +200,7 @@ useState 가 어떻게 값을 기억하는가? 리액트 createElement 가 호�
 
 3. 리액트에서 사용자 컴포넌트와 일반 태그의 차이는 대문자로 시작하는지의 여부로 판단한다. 대문자로 시작하는 걸 바벨에서 리액트 사용자 컴포넌트로 이해한다.(아주 간단한 방법이지만 확실하게)
 
-4. 면접에서 회사에 궁금한 점 등 질문을 할 경우 질문이 아예 없으면 면접에서 감점이라는 생각이다. 궁금한 게 없다고? 왜 지원했지? 라고 생각할 수도 있다고 하셨다.
+4. 면접에서 회사에 궁금한 점 등 질문을 할 경우 질문이 아예 없으면 면접에서 감점이라는 생각이다. 궁금한 게 없다고? 왜 지원했지? 라고 생각할 수도 있다고 하셨다. (면접 마무리에서 회사에 궁금한 것은 꼭 물어보는 것이 무조건 좋다.)
 
 5. 라이브러리 코드를 까보는 팁은 초기 릴리즈 태그까지 찾아가서 보는 것이다. 초기 모델과 기본 컨셉은 크게 바뀌지 않는데, 방어 코드들이나 코드베이스 확장되어있지 않은 상태(규모가 작은)이기에 더 보기가 좋다.
 
@@ -202,3 +209,5 @@ useState 가 어떻게 값을 기억하는가? 리액트 createElement 가 호�
 ### 레퍼런스
 - [강의 예제](https://gist.github.com/ibare/c736f63fba835c172e60aa98a996dada)
 - [React Docs](https://ko.reactjs.org/docs)
+-(https://pomb.us/build-your-own-react/)
+-https://github.com/textuel/Woowa_Tech_Learning_React_Typescript/blob/master/ms/week_2/Tuesday.md
