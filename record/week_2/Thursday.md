@@ -232,7 +232,8 @@ Generator 함수는 호출되어도 즉시 실행되지 않고, 대신 함수를
 ### `Generator`
 
 * `설명`
-Generator 객체는 generator function 으로부터 반환된 값이며 반복자와 반복자 프로토콜을 준수합니다.
+
+Generator 객체는 generator function 으로부터 반환된 값이며 반복자와 반복자 프로토콜을 준수한다.
 
 ### `yield`
 
@@ -251,7 +252,7 @@ yield 키워드는 실질적으로  `value` 와 `done` 이라는 두 개의 속�
 * 제너레이터 함수가 종료가 되었다; 이 경우, 제너레이터 실행이 종료되고  IteratorResult는 caller 로  값이 `undefined`이고 done의 값이 `true` 로 리턴한다.
 * return 문에 도달했다. 이 경우에는, 이 값이 종료되고 `IteratorResult`는 caller 로 `return` 문에 의해 반환되는 값과 done의 값이 true  로 리턴한다.
 
-
+---
 
 ### 수업 내용 외 코멘트, Q&A 기타
 
