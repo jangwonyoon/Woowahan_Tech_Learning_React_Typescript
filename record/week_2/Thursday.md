@@ -1,10 +1,12 @@
 ## 우아한 테크러닝 React&TypeScript 4회차
 
-2020년 09월 01일 화요일 
+2020년 09월 11일 목요일 
 
 ## 강의 목표
 
-* 컴포넌트 디자인 및 비동기
+* **컴포넌트 디자인 및 비동기**
+
+---
 
 - `index.js`
 
@@ -263,9 +265,9 @@ yield 키워드는 실질적으로  `value` 와 `done` 이라는 두 개의 속�
 3. `제너레이터(Generator)`는 비동기를 동기적으로 사용하기 위해 만든 것이 아니라 단지 `코루틴`이라는 매커니즘을 활용해 만든 것. 만들고 보니 `비동기를 동기처럼 사용할 수 있는 방식으로 사용이 가능하겠다.`하여 사용하는 것이지 단지 그 목적으로 만들어진 것이 아니다. 뭐가 우선인지 컨셉을 이해하는 게 정말 중요하다.
 
 ### 레퍼런스
--[](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/yield)
--[](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/function*)
--[](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Generator)
+-[yield](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/yield)
+-[function*](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/function*)
+-[Generator](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Generator)
 - [](https://github.com/soongyu/woowa-tech-learning-react-typescript/blob/master/week02-2.md)
--[](https://gist.github.com/ibare/c7020756170aa7ed3d1cc84f86972409)
+-[강의 코드](https://gist.github.com/ibare/c7020756170aa7ed3d1cc84f86972409)
 
