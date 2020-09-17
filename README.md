@@ -1,4 +1,5 @@
-![pnhoi0_piaq-0_logo](https://user-images.githubusercontent.com/33803975/92595592-946cab80-f2df-11ea-9c0f-d5cfc2b51f60.jpg)
+<img width="775" alt="스크린샷 2020-09-11 오전 11 53 06" src="https://user-images.githubusercontent.com/33803975/92849275-14049280-f426-11ea-9d0e-594d9dc081d6.png">
+
 
 ## 😆우아한 테크러닝 React&TypeScript 3기
 
